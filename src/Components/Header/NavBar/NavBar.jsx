@@ -4,9 +4,11 @@ import coin from "../../../assets/images/coin-logo.png";
 const NavBar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 px-20 mt-8">
+      <div className="navbar bg-base-100 ">
         <div className="navbar-start">
-          <img src={logo} />
+          <a href="">
+            <img src={logo} />
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-bold text-lg">
