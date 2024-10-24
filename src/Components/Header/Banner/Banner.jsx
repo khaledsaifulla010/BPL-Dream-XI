@@ -1,7 +1,11 @@
 import bg from "../../../assets/images/bg-shadow.png";
 import bannerImage from "../../../assets/images/banner-main.png";
 
-const Banner = () => {
+const Banner = ({handleClaimCoins}) => {
+
+
+
+
   return (
     <div className="mt-16 mb-4">
       <div
@@ -21,7 +25,10 @@ const Banner = () => {
               Beyond Boundaries Beyond Limits
             </p>
             <div className="border-2 w-52 rounded-xl py-2 ml-[450px] border-lime-500">
-              <button className="btn bg-lime-400 font-black text-lg border-none">
+              <button
+                onClick={handleClaimCoins}
+                className="btn bg-lime-400 font-black text-lg border-none"
+              >
                 Claim Free Credit
               </button>
             </div>

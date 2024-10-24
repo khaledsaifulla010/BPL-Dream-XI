@@ -1,7 +1,7 @@
 import logo from "../../../assets/images/logo.png";
 import coin from "../../../assets/images/coin-logo.png";
 
-const NavBar = () => {
+const NavBar = ({coins}) => {
   return (
     <div>
       <div className="navbar bg-base-100 ">
@@ -28,7 +28,7 @@ const NavBar = () => {
         </div>
         <div className="navbar-end ">
           <button className="border-2 p-4 rounded-lg h-12  font-black text-xl flex items-center gap-2">
-            0 Coin <img className="w-5 mt-1" src={coin} />
+            {coins} Coin <img className="w-5 mt-1" src={coin} />
           </button>
         </div>
       </div>
