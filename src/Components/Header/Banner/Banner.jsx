@@ -3,7 +3,7 @@ import bannerImage from "../../../assets/images/banner-main.png";
 
 const Banner = () => {
   return (
-    <div className="mt-16 mb-36">
+    <div className="mt-16 mb-4">
       <div
         className="hero h-[550px] rounded-2xl"
         style={{
