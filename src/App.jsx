@@ -5,29 +5,26 @@ import Banner from "./Components/Header/Banner/Banner";
 import NavBar from "./Components/Header/NavBar/NavBar";
 import MainSection from "./Components/MainSection/MainSection";
 
-//React Toastify
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  // React Toastify
-
-  const notify = () =>
-    toast.success("Credit Added to Your Account", {
-      position: "top-center",
-    });
-
   // added coins
 
   const [coins, setCoins] = useState(0);
 
   const handleClaimCoins = () => {
     //  console.log(coins);
-    const totalCoins = coins + 500000;
+    const totalCoins = coins + 1000000;
     setCoins(totalCoins);
 
     // React Toastify
+
+    const notify = () =>
+      toast.success("Credit Added to Your Account", {
+        position: "top-center",
+      });
+
     notify();
   };
 
@@ -51,7 +48,6 @@ function App() {
       });
     }
   };
-  // console.log(isActive);
 
   // All players Load
 
@@ -63,21 +59,48 @@ function App() {
       .then((data) => setPlayers(data));
   }, []);
 
-
   // Selected Players
 
+  const [select, setSelect] = useState([]);
 
-  const [select, setSelect]= useState([])
+  const handleSelectPlayer = (player) => {
+    const selectNotification = () =>
+      toast.success(`Congrats!! ${player.name} is now in your Squad`, {
+        position: "top-center",
+      });
+    const insufficientCreditNotification = () =>
+      toast.error("Not Enough Credit", {
+        position: "top-center",
+      });
+    const duplicatePlayerNotification = () =>
+      toast.warning("Player is already in your squad", {
+        position: "top-center",
+      });
 
+    const maxPlayersNotification = () =>
+      toast.warning("You can only select up to 6 players", {
+        position: "top-center",
+      });
 
-  const handleSelectPlayer = (player)=>{
-    // console.log(player);
+    const newTotalsCoins = coins - player.price;
 
+    const isPlayerAlreadySelected = select.some(
+      (selectedPlayer) => selectedPlayer.id === player.id
+    );
 
-    const newSelect = [...select, player]
-    setSelect(newSelect)
-  }
-
+    if (isPlayerAlreadySelected) {
+      duplicatePlayerNotification();
+    } else if (newTotalsCoins < 0) {
+      insufficientCreditNotification();
+    } else if (select.length >= 6) {
+      maxPlayersNotification();
+    } else {
+      const newSelect = [...select, player];
+      setCoins(newTotalsCoins);
+      selectNotification();
+      setSelect(newSelect);
+    }
+  };
 
   return (
     <>
