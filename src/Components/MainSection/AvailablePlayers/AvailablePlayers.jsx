@@ -1,6 +1,6 @@
 import AvailablePlayerCard from "./AvailablePlayerCard";
 
-const AvailablePlayers = ({ players }) => {
+const AvailablePlayers = ({ players, handleSelectPlayer }) => {
   return (
     <div>
       <div className="w-[1000px] space-y-10">
@@ -13,6 +13,7 @@ const AvailablePlayers = ({ players }) => {
             <AvailablePlayerCard
               key={player.id}
               player={player}
+              handleSelectPlayer={handleSelectPlayer}
             ></AvailablePlayerCard>
           ))}
         </div>

@@ -63,6 +63,22 @@ function App() {
       .then((data) => setPlayers(data));
   }, []);
 
+
+  // Selected Players
+
+
+  const [select, setSelect]= useState([])
+
+
+  const handleSelectPlayer = (player)=>{
+    // console.log(player);
+
+
+    const newSelect = [...select, player]
+    setSelect(newSelect)
+  }
+
+
   return (
     <>
       <div className="px-20 mt-8">
@@ -72,6 +88,8 @@ function App() {
           handleIsActiveState={handleIsActiveState}
           isActive={isActive}
           players={players}
+          handleSelectPlayer={handleSelectPlayer}
+          select={select}
         ></MainSection>
       </div>
       <Footer></Footer>

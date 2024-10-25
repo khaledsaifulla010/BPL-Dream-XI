@@ -5,7 +5,7 @@ import bat from "../../../assets/images/bat.png";
 import bowl from "../../../assets/images/cricket-ball.png";
 import rounder from "../../../assets/images/rounder.png";
 import gloves from "../../../assets/images/glove.png";
-const AvailablePlayerCard = ({ player }) => {
+const AvailablePlayerCard = ({ player, handleSelectPlayer }) => {
   const { id, name, image, nationality, role, batsmanType, bowlerType, price } =
     player;
   return (
@@ -52,9 +52,21 @@ const AvailablePlayerCard = ({ player }) => {
               {batsmanType ? batsmanType : "N/A"}
             </h1>
             <h1 className="font-bold text-slate-500 text-base flex items-center gap-1">
-              <img className="w-4" src={bowl} />{" "}
+              <img className="w-4" src={bowl} />
               {bowlerType ? bowlerType : "N/A"}
             </h1>
+          </div>
+
+          <div className="flex items-center justify-between mt-6">
+            <h1 className="font-bold text-slate-500 text-base">
+              Price : $ {price}
+            </h1>
+            <button
+              onClick={()=>handleSelectPlayer(player)}
+              className=" p-2 rounded-xl bg-lime-400 font-black"
+            >
+              Choose Player
+            </button>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@
     "nationality": "Bangladeshi",
     "role": "Batsman",
     "batsmanType": "Left-Handed-Batsman",
-    "bowlerType": "N/A",
+    "bowlerType": false,
     "price": 850000
   },
   {
@@ -16,7 +16,7 @@
     "nationality": "Pakistani",
     "role": "Batsman",
     "batsmanType": "Right-Handed-Batsman",
-    "bowlerType": "N/A",
+    "bowlerType": false,
     "price": 1500000
   },
   {
@@ -26,7 +26,7 @@
     "nationality": "Bangladeshi",
     "role": "Wicketkeeper-Batsman",
     "batsmanType": "Right-Handed-Batsman",
-    "bowlerType": "N/A",
+    "bowlerType": false,
     "price": 750000
   },
   {
@@ -40,7 +40,7 @@
     "price": 1400000
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Rashid Khan",
     "image": "https://i.ibb.co.com/NYYSTYC/rashid.jpg",
     "nationality": "Afghan",
@@ -50,12 +50,12 @@
     "price": 1300000
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Mustafizur Rahman",
     "image": "https://i.ibb.co.com/3S6MtbN/mustafiz.jpg",
     "nationality": "Bangladeshi",
     "role": "Bowler",
-    "batsmanType": "N/A",
+    "batsmanType": false,
     "bowlerType": "Fast",
     "price": 950000
   }
