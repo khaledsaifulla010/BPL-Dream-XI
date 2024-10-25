@@ -1,7 +1,9 @@
 import SelectedPlayerCard from "./SelectedPlayerCard";
 
 const SelectedPlayers = ({ select }) => {
-  const { id } = select;
+  const redirectToAvailablePlayers = () => [
+    (window.location.href = "/index.html"),
+  ];
 
   return (
     <div>
@@ -16,6 +18,12 @@ const SelectedPlayers = ({ select }) => {
           ></SelectedPlayerCard>
         ))}
       </div>
+      <button
+        onClick={redirectToAvailablePlayers}
+        className="border-2 p-3 rounded-xl mt-12 bg-lime-400 font-bold text-lg"
+      >
+        Add More Players
+      </button>
     </div>
   );
 };

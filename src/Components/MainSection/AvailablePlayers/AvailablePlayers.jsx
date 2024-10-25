@@ -3,7 +3,7 @@ import AvailablePlayerCard from "./AvailablePlayerCard";
 const AvailablePlayers = ({ players, handleSelectPlayer }) => {
   return (
     <div>
-      <div className="w-[1000px] space-y-10">
+      <div id="available-players" className="w-[1000px] space-y-10">
         <h1 className="text-3xl font-black ">AvailablePlayers</h1>
 
         {/* <h1 className="mt-12">AvailablePlayers : {players.length} </h1> */}
