@@ -1,57 +1,62 @@
 [
   {
+    "id": 1,
     "name": "Tamim Iqbal",
     "image": "https://i.ibb.co.com/m9V73CK/tamim.jpg",
     "nationality": "Bangladeshi",
     "role": "Batsman",
-    "batsmanType": "left-hand",
-    "bowlerType": "none",
+    "batsmanType": "Left-Handed-Batsman",
+    "bowlerType": "N/A",
     "price": 850000
   },
   {
+    "id": 2,
     "name": "Babar Azam",
     "image": "https://i.ibb.co.com/b7z5nMy/babar.jpg",
     "nationality": "Pakistani",
     "role": "Batsman",
-    "batsmanType": "right-hand",
-    "bowlerType": "none",
+    "batsmanType": "Right-Handed-Batsman",
+    "bowlerType": "N/A",
     "price": 1500000
   },
   {
+    "id": 3,
     "name": "Mushfiqur Rahim",
     "image": "https://i.ibb.co.com/P42h7Rg/musfiq.jpg",
     "nationality": "Bangladeshi",
     "role": "Wicketkeeper-Batsman",
-    "batsmanType": "right-hand",
-    "bowlerType": "none",
+    "batsmanType": "Right-Handed-Batsman",
+    "bowlerType": "N/A",
     "price": 750000
   },
   {
+    "id": 4,
     "name": "Moin Ali",
     "image": "https://i.ibb.co.com/6nKpWLR/moin.jpg",
     "nationality": "English",
-    "role": "Allrounder",
-    "batsmanType": "left-hand",
-    "bowlerType": "medium",
+    "role": "All-Rounder",
+    "batsmanType": "Left-Handed-Batsman",
+    "bowlerType": "Off-Spin",
     "price": 1400000
   },
-
   {
+    "id": 6,
+    "name": "Rashid Khan",
+    "image": "https://i.ibb.co.com/NYYSTYC/rashid.jpg",
+    "nationality": "Afghan",
+    "role": "All-Rounder",
+    "batsmanType": "Right-Handed-Batsman",
+    "bowlerType": "Leg spin",
+    "price": 1300000
+  },
+  {
+    "id": 5,
     "name": "Mustafizur Rahman",
     "image": "https://i.ibb.co.com/3S6MtbN/mustafiz.jpg",
     "nationality": "Bangladeshi",
     "role": "Bowler",
-    "batsmanType": "none",
-    "bowlerType": "medium",
+    "batsmanType": "N/A",
+    "bowlerType": "Fast",
     "price": 950000
-  },
-  {
-    "name": "Rashid Khan",
-    "image": "https://i.ibb.co.com/NYYSTYC/rashid.jpg",
-    "nationality": "Afghan",
-    "role": "Allrounder",
-    "batsmanType": "right-hand",
-    "bowlerType": "leg spin",
-    "price": 1300000
   }
 ]

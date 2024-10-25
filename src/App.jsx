@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Banner from "./Components/Header/Banner/Banner";
@@ -55,14 +55,23 @@ function App() {
 
   // All players Load
 
+  const [players, setPlayers] = useState([]);
+
+  useEffect(() => {
+    fetch("players.json")
+      .then((res) => res.json())
+      .then((data) => setPlayers(data));
+  }, []);
+
   return (
     <>
-      <div className="px-20 mt-8 mb-[1200px]">
+      <div className="px-20 mt-8">
         <NavBar coins={coins}></NavBar>
         <Banner handleClaimCoins={handleClaimCoins}></Banner>
         <MainSection
           handleIsActiveState={handleIsActiveState}
           isActive={isActive}
+          players={players}
         ></MainSection>
       </div>
       <Footer></Footer>

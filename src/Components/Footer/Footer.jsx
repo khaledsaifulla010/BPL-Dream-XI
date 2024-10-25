@@ -3,8 +3,8 @@ import footerShadow from "../../assets/images/bg-shadow.png";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="mt-96">
+    <div className="mt-[750px]">
+      {/* <div className="mt-96">
         <div>
           <div
             className="hero h-[350px] w-[1000px] rounded-2xl absolute ml-[250px] top-[1700px] border-2"
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <div className=" bg-black text-white p-10">

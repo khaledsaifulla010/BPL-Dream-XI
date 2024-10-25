@@ -2,17 +2,18 @@ import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 import "./MainSection.css";
 
-const MainSection = ({ handleIsActiveState, isActive }) => {
+const MainSection = ({ handleIsActiveState, isActive, players }) => {
   return (
-    <div className="flex items-center justify-between mt-16 px-4">
-      <div>
+    <div className="flex  justify-between mt-24 w-[1350px] gap-8 px-4">
+      <div className="w-[1100px]">
         {isActive.availability ? (
-          <AvailablePlayers></AvailablePlayers>
+          <AvailablePlayers players={players}></AvailablePlayers>
         ) : (
           <SelectedPlayers></SelectedPlayers>
         )}
       </div>
-      <div>
+
+      <div className="w-[300px]">
         <button
           dir="ltr"
           className={`${
