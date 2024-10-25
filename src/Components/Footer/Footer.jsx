@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mt-96">
         <div>
           <div
-            className="hero h-[350px] w-[1000px] rounded-2xl absolute ml-[250px] top-[800px] border-2"
+            className="hero h-[350px] w-[1000px] rounded-2xl absolute ml-[250px] top-[1700px] border-2"
             style={{
               backgroundImage: `url(${footerShadow})`,
             }}

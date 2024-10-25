@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Banner from "./Components/Header/Banner/Banner";
 import NavBar from "./Components/Header/NavBar/NavBar";
+import MainSection from "./Components/MainSection/MainSection";
 
 function App() {
   // added coins
@@ -15,11 +16,37 @@ function App() {
     setCoins(totalCoins);
   };
 
+  // Active Toggle Button
+
+  const [isActive, setIsActive] = useState({
+    availability: true,
+    status: "availability",
+  });
+
+  const handleIsActiveState = (status) => {
+    if (status === "availability") {
+      setIsActive({
+        availability: true,
+        status: "availability",
+      });
+    } else {
+      setIsActive({
+        availability: false,
+        status: "selected",
+      });
+    }
+  };
+  console.log(isActive);
+
   return (
     <>
-      <div className="px-20 mt-8">
+      <div className="px-20 mt-8 mb-[1200px]">
         <NavBar coins={coins}></NavBar>
         <Banner handleClaimCoins={handleClaimCoins}></Banner>
+        <MainSection
+          handleIsActiveState={handleIsActiveState}
+          isActive={isActive}
+        ></MainSection>
       </div>
       <Footer></Footer>
     </>
