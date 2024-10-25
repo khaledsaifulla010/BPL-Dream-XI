@@ -87,6 +87,8 @@ const Footer = () => {
             </div>
           </nav>
         </footer>
+        <div className="divider divider-neutral"></div>
+        <h1 className="text-center font-bold">@2024 BPL Dream XI Company All Right Reserved.</h1>
       </div>
     </div>
   );
