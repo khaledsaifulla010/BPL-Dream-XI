@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Tamim Iqbal",
+    "image": "https://i.ibb.co.com/m9V73CK/tamim.jpg",
+    "nationality": "Bangladeshi",
+    "role": "Batsman",
+    "batsmanType": "left-hand",
+    "bowlerType": "none",
+    "price": 850000
+  },
+  {
+    "name": "Babar Azam",
+    "image": "https://i.ibb.co.com/b7z5nMy/babar.jpg",
+    "nationality": "Pakistani",
+    "role": "Batsman",
+    "batsmanType": "right-hand",
+    "bowlerType": "none",
+    "price": 1500000
+  },
+  {
+    "name": "Mushfiqur Rahim",
+    "image": "https://i.ibb.co.com/P42h7Rg/musfiq.jpg",
+    "nationality": "Bangladeshi",
+    "role": "Wicketkeeper-Batsman",
+    "batsmanType": "right-hand",
+    "bowlerType": "none",
+    "price": 750000
+  },
+  {
+    "name": "Moin Ali",
+    "image": "https://i.ibb.co.com/6nKpWLR/moin.jpg",
+    "nationality": "English",
+    "role": "Allrounder",
+    "batsmanType": "left-hand",
+    "bowlerType": "medium",
+    "price": 1400000
+  },
+
+  {
+    "name": "Mustafizur Rahman",
+    "image": "https://i.ibb.co.com/3S6MtbN/mustafiz.jpg",
+    "nationality": "Bangladeshi",
+    "role": "Bowler",
+    "batsmanType": "none",
+    "bowlerType": "medium",
+    "price": 950000
+  },
+  {
+    "name": "Rashid Khan",
+    "image": "https://i.ibb.co.com/NYYSTYC/rashid.jpg",
+    "nationality": "Afghan",
+    "role": "Allrounder",
+    "batsmanType": "right-hand",
+    "bowlerType": "leg spin",
+    "price": 1300000
+  }
+]
