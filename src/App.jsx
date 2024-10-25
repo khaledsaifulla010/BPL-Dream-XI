@@ -113,6 +113,9 @@ function App() {
           players={players}
           handleSelectPlayer={handleSelectPlayer}
           select={select}
+          setSelect={setSelect}
+          coins={coins}
+          setCoins={setCoins}
         ></MainSection>
       </div>
       <Footer></Footer>

@@ -1,7 +1,7 @@
 import { RiDeleteBinFill } from "react-icons/ri";
 
-const SelectedPlayerCard = ({ selectedPlayer }) => {
-  const { name, image, role } = selectedPlayer;
+const SelectedPlayerCard = ({ selectedPlayer, removePlayer }) => {
+  const { id, name, image, role, price } = selectedPlayer;
   return (
     <div>
       <div className="card bg-base-100 w-[1030px] border-2 mt-24">
@@ -17,7 +17,7 @@ const SelectedPlayerCard = ({ selectedPlayer }) => {
               </div>
             </div>
             <div>
-              <button>
+              <button onClick={() => removePlayer(id, price)}>
                 <RiDeleteBinFill className=" text-3xl text-red-600"></RiDeleteBinFill>
               </button>
             </div>

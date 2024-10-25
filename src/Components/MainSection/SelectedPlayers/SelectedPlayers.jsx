@@ -1,9 +1,15 @@
 import SelectedPlayerCard from "./SelectedPlayerCard";
 
-const SelectedPlayers = ({ select }) => {
+const SelectedPlayers = ({ select, setSelect, coins,setCoins }) => {
   const redirectToAvailablePlayers = () => [
     (window.location.href = "/index.html"),
   ];
+
+  const removePlayer = (id, price) => {
+    const updatedSelect = select.filter((player) => player.id !== id);
+    setSelect(updatedSelect);
+    setCoins(coins + price)
+  };
 
   return (
     <div>
@@ -15,6 +21,7 @@ const SelectedPlayers = ({ select }) => {
           <SelectedPlayerCard
             key={selectedPlayer.id}
             selectedPlayer={selectedPlayer}
+            removePlayer={removePlayer}
           ></SelectedPlayerCard>
         ))}
       </div>

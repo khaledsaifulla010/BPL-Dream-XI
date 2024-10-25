@@ -8,6 +8,9 @@ const MainSection = ({
   players,
   handleSelectPlayer,
   select,
+  setSelect,
+  coins,
+  setCoins,
 }) => {
   return (
     <div className="flex  justify-between mt-24 w-[1350px] gap-8 px-4">
@@ -18,7 +21,12 @@ const MainSection = ({
             handleSelectPlayer={handleSelectPlayer}
           ></AvailablePlayers>
         ) : (
-          <SelectedPlayers select={select}></SelectedPlayers>
+          <SelectedPlayers
+            select={select}
+            setSelect={setSelect}
+            coins={coins}
+            setCoins={setCoins}
+          ></SelectedPlayers>
         )}
       </div>
 
