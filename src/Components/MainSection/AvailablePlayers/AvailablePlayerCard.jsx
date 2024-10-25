@@ -6,8 +6,17 @@ import bowl from "../../../assets/images/cricket-ball.png";
 import rounder from "../../../assets/images/rounder.png";
 import gloves from "../../../assets/images/glove.png";
 const AvailablePlayerCard = ({ player, handleSelectPlayer }) => {
-  const { id, name, image, nationality, role, batsmanType, bowlerType, price } =
-    player;
+  const {
+    id,
+    name,
+    image,
+    nationality,
+    role,
+    batsmanType,
+    bowlerType,
+    price,
+    rating,
+  } = player;
   return (
     <div>
       <div className="card card-compact bg-base-100 w-[400px] h-[600px] border-2 mt-12">
@@ -44,7 +53,10 @@ const AvailablePlayerCard = ({ player, handleSelectPlayer }) => {
             </button>
           </div>
           <div className="divider"></div>
-          <h1 className="font-bold text-xl ">Rating</h1>
+          <div className="flex items-center justify-between">
+            <h1 className="font-bold text-xl ">Rating</h1>
+            <h1 className="font-bold text-xl ">{rating}</h1>
+          </div>
 
           <div className="flex items-center justify-between mt-4">
             <h1 className="font-bold text-slate-500 text-base flex items-center gap-1">
