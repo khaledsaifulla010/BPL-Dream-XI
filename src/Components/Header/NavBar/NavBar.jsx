@@ -1,6 +1,6 @@
 import logo from "../../../assets/images/logo.png";
 import coin from "../../../assets/images/coin-logo.png";
-
+import PropTypes from "prop-types";
 const NavBar = ({ coins }) => {
   return (
     <div className="sticky z-10 top-0">
@@ -34,6 +34,10 @@ const NavBar = ({ coins }) => {
       </div>
     </div>
   );
+};
+
+NavBar.propTypes = {
+  coins: PropTypes.number.isRequired,
 };
 
 export default NavBar;

@@ -1,5 +1,7 @@
 import { RiDeleteBinFill } from "react-icons/ri";
 
+import PropTypes from "prop-types";
+
 const SelectedPlayerCard = ({ selectedPlayer, removePlayer }) => {
   const { id, name, image, role, price } = selectedPlayer;
   return (
@@ -26,6 +28,11 @@ const SelectedPlayerCard = ({ selectedPlayer, removePlayer }) => {
       </div>
     </div>
   );
+};
+
+SelectedPlayerCard.propTypes = {
+  selectedPlayer: PropTypes.object.isRequired,
+  removePlayer: PropTypes.func.isRequired,
 };
 
 export default SelectedPlayerCard;

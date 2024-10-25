@@ -2,6 +2,8 @@ import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
 import "./MainSection.css";
 
+import PropTypes from "prop-types";
+
 const MainSection = ({
   handleIsActiveState,
   isActive,
@@ -56,6 +58,17 @@ const MainSection = ({
       </div>
     </div>
   );
+};
+
+MainSection.propTypes = {
+  handleIsActiveState: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired,
+  players: PropTypes.object.isRequired,
+  handleSelectPlayer: PropTypes.func.isRequired,
+  select: PropTypes.array.isRequired,
+  setSelect: PropTypes.func.isRequired,
+  coins: PropTypes.number.isRequired,
+  setCoins: PropTypes.func.isRequired,
 };
 
 export default MainSection;

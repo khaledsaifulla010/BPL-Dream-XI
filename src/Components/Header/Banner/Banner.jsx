@@ -1,11 +1,7 @@
 import bg from "../../../assets/images/bg-shadow.png";
 import bannerImage from "../../../assets/images/banner-main.png";
-
-const Banner = ({handleClaimCoins}) => {
-
-
-
-
+import PropTypes from "prop-types";
+const Banner = ({ handleClaimCoins }) => {
   return (
     <div className="mt-16 mb-4">
       <div
@@ -37,6 +33,10 @@ const Banner = ({handleClaimCoins}) => {
       </div>
     </div>
   );
+};
+
+Banner.propTypes = {
+  handleClaimCoins: PropTypes.func.isRequired,
 };
 
 export default Banner;

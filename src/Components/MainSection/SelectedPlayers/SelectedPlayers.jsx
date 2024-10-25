@@ -1,6 +1,8 @@
 import SelectedPlayerCard from "./SelectedPlayerCard";
 
-const SelectedPlayers = ({ select, setSelect, coins,setCoins }) => {
+import PropTypes from "prop-types";
+
+const SelectedPlayers = ({ select, setSelect, coins, setCoins }) => {
   const redirectToAvailablePlayers = () => [
     (window.location.href = "/index.html"),
   ];
@@ -8,7 +10,7 @@ const SelectedPlayers = ({ select, setSelect, coins,setCoins }) => {
   const removePlayer = (id, price) => {
     const updatedSelect = select.filter((player) => player.id !== id);
     setSelect(updatedSelect);
-    setCoins(coins + price)
+    setCoins(coins + price);
   };
 
   return (
@@ -33,6 +35,13 @@ const SelectedPlayers = ({ select, setSelect, coins,setCoins }) => {
       </button>
     </div>
   );
+};
+
+SelectedPlayers.propTypes = {
+  select: PropTypes.array.isRequired,
+  setSelect: PropTypes.func.isRequired,
+  coins: PropTypes.number.isRequired,
+  setCoins: PropTypes.func.isRequired,
 };
 
 export default SelectedPlayers;
