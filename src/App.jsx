@@ -5,7 +5,19 @@ import Banner from "./Components/Header/Banner/Banner";
 import NavBar from "./Components/Header/NavBar/NavBar";
 import MainSection from "./Components/MainSection/MainSection";
 
+//React Toastify
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
+  // React Toastify
+
+  const notify = () =>
+    toast.success("Credit Added to Your Account", {
+      position: "top-center",
+    });
+
   // added coins
 
   const [coins, setCoins] = useState(0);
@@ -14,6 +26,9 @@ function App() {
     //  console.log(coins);
     const totalCoins = coins + 500000;
     setCoins(totalCoins);
+
+    // React Toastify
+    notify();
   };
 
   // Active Toggle Button
@@ -36,7 +51,7 @@ function App() {
       });
     }
   };
-  console.log(isActive);
+  // console.log(isActive);
 
   return (
     <>
@@ -49,6 +64,7 @@ function App() {
         ></MainSection>
       </div>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   );
 }
