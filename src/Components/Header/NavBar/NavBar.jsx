@@ -1,9 +1,9 @@
 import logo from "../../../assets/images/logo.png";
 import coin from "../../../assets/images/coin-logo.png";
 
-const NavBar = ({coins}) => {
+const NavBar = ({ coins }) => {
   return (
-    <div>
+    <div className="sticky z-10 top-0">
       <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <a href="">
