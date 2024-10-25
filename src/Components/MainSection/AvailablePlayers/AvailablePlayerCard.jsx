@@ -10,9 +10,9 @@ const AvailablePlayerCard = ({ player, handleSelectPlayer }) => {
     player;
   return (
     <div>
-      <div className="card card-compact bg-base-100 w-[400px] border-2 mt-12">
+      <div className="card card-compact bg-base-100 w-[400px] h-[600px] border-2 mt-12">
         <figure>
-          <img className="w-full h-[450px]" src={image} />
+          <img className="w-[300px] mt-4 rounded-xl  h-[250px]" src={image} />
         </figure>
         <div className="card-body">
           <h2 className="flex items-center gap-2 font-black text-xl">
@@ -62,7 +62,7 @@ const AvailablePlayerCard = ({ player, handleSelectPlayer }) => {
               Price : $ {price}
             </h1>
             <button
-              onClick={()=>handleSelectPlayer(player)}
+              onClick={() => handleSelectPlayer(player)}
               className=" p-2 rounded-xl bg-lime-400 font-black"
             >
               Choose Player

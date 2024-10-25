@@ -7,50 +7,82 @@
     "role": "Batsman",
     "batsmanType": "Left-Handed-Batsman",
     "bowlerType": false,
-    "price": 250000
+    "price": 450000
   },
   {
     "id": 2,
+    "name": "David Warner",
+    "image": "https://i.ibb.co.com/93kMpp8/warner.jpg",
+    "nationality": "Australian",
+    "role": "Batsman",
+    "batsmanType": "Left-Handed-Batsman",
+    "bowlerType": false,
+    "price": 275000
+  },
+
+  {
+    "id": 3,
     "name": "Babar Azam",
     "image": "https://i.ibb.co.com/b7z5nMy/babar.jpg",
     "nationality": "Pakistani",
     "role": "Batsman",
     "batsmanType": "Right-Handed-Batsman",
     "bowlerType": false,
-    "price": 300000
+    "price": 350000
   },
   {
-    "id": 3,
+    "id": 4,
+    "name": "Virat Kohli",
+    "image": "https://i.ibb.co.com/LYdW7L7/virat.jpg",
+    "nationality": "Indian",
+    "role": "Batsman",
+    "batsmanType": "Right-Handed-Batsman",
+    "bowlerType": false,
+    "price": 375000
+  },
+
+  {
+    "id": 5,
     "name": "Mushfiqur Rahim",
     "image": "https://i.ibb.co.com/P42h7Rg/musfiq.jpg",
     "nationality": "Bangladeshi",
     "role": "Wicketkeeper-Batsman",
     "batsmanType": "Right-Handed-Batsman",
     "bowlerType": false,
-    "price": 275000
+    "price": 375000
   },
   {
-    "id": 4,
+    "id": 6,
+    "name": "MS Dhoni",
+    "image": "https://i.ibb.co.com/LPvHv1v/dhoni.jpg",
+    "nationality": "Bangladeshi",
+    "role": "Wicketkeeper-Batsman",
+    "batsmanType": "Right-Handed-Batsman",
+    "bowlerType": false,
+    "price": 355000
+  },
+  {
+    "id": 7,
     "name": "Moin Ali",
     "image": "https://i.ibb.co.com/6nKpWLR/moin.jpg",
     "nationality": "English",
     "role": "All-Rounder",
     "batsmanType": "Left-Handed-Batsman",
     "bowlerType": "Off-Spin",
-    "price": 340000
+    "price": 310000
   },
   {
-    "id": 5,
+    "id": 8,
     "name": "Rashid Khan",
     "image": "https://i.ibb.co.com/NYYSTYC/rashid.jpg",
     "nationality": "Afghan",
     "role": "All-Rounder",
     "batsmanType": "Right-Handed-Batsman",
     "bowlerType": "Leg spin",
-    "price": 170000
+    "price": 320000
   },
   {
-    "id": 6,
+    "id": 9,
     "name": "Mustafizur Rahman",
     "image": "https://i.ibb.co.com/3S6MtbN/mustafiz.jpg",
     "nationality": "Bangladeshi",
@@ -58,5 +90,15 @@
     "batsmanType": false,
     "bowlerType": "Fast",
     "price": 425000
+  },
+  {
+    "id": 10,
+    "name": "Mitchell Starc",
+    "image": "https://i.ibb.co.com/CHP5BBj/starc.jpg",
+    "nationality": "Australian",
+    "role": "Bowler",
+    "batsmanType": false,
+    "bowlerType": "Fast",
+    "price": 402000
   }
 ]
